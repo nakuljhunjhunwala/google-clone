@@ -11,7 +11,7 @@ import LocalOfferIcon from "@material-ui/icons/LocalOffer"
 import RoomIcon from "@material-ui/icons/Room"
 import MoreVertIcon from "@material-ui/icons/MoreVert"
 
-
+// eslint-disable-next-line jsx-a11y/anchor-is-valid
 
 function SearchPage() {
 
@@ -102,7 +102,8 @@ function SearchPage() {
                                  )
                             }
 
-                      <a>{item.displayLink}▼</a> 
+                      
+                      <a href>{item.displayLink}▼</a> 
                       <a className="searchPage__resultTitle" href={item.link}><h2>{item.title}</h2></a>
                       <p className="searchPage__resultSnippet">{item.snippet}</p>
                     </div>
